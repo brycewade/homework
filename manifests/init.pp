@@ -43,7 +43,8 @@ class homework inherits homework::params {
 # Grab a pre-configured file for the particular distro.  This is severely 
 # limits where we can use it, and what we can do with it, but it is safer
 # than trying to edit pre-existing files, and simpler than setting up
-# templates
+# templates, especially since we don't have any variables we are concerned
+# with (yet).
 
   file { '/etc/ssh/sshd_config':
     owner   => 'root',
